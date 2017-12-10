@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>offset</title>
+	<link rel="stylesheet" href="">
+	<style type="">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+			#box {
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				padding: 10px;
+				margin: 21px;
+			}
+	</style>
+</head>
+<body>
+	<div id="box">
+		
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	let box = document.querySelector('#box');
+	document.onclick = ()=>{
+		console.log(box.offsetWidth)
+		console.log(box.offsetLeft)
+	}
+</script>

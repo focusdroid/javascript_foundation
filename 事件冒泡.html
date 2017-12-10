@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>事件冒泡</title>
+	<link rel="stylesheet" href="">
+	<style>
+		.div1 {
+			width: 100px;
+			height: 100px;
+			background: #ccc;
+		}
+.div2 {
+			width: 50px;
+			height: 50px;
+			background: green;
+		}		
+.div3 {
+			width: 20px;
+			height: 20px;
+			background: red;
+		}		
+	</style>
+</head>
+<body>
+	<div class="div1" onclick="alert('#ccc')">
+		<div class="div2" onclick="alert('green')">
+			<div class="div3" onclick="alert('red')">
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>

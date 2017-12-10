@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	
+</body>
+</html>
+<script type="text/javascript">
+	/*document.onclick = ()=>{
+		alert('a')
+	}*/
+	//alert(document.childNodes[1].tagName)//HTML
+	/*document.onclick = ()=>{
+		alert(event.clientX+'--'+event.clientY)
+	}*/
+
+// document.onclick = (ev)=>{
+// 		alert(ev.clientX+'--'+ev.clientY)
+// 	}	
+	document.onclick = (ev)=>{
+		// if(ev){
+		// 	alert(ev.clientX+'---'+ ev.clientY)
+		// }else {
+		// 	alert(event.clientX +'---'+ event.clientY)
+		// }
+		let oEvent = ev || event
+		alert(oEvent.clientX+'--'+oEvent.clientY)
+
+
+	}
+</script>

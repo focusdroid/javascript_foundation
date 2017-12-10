@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ctrl+enter</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<textarea cols="40" rows="10" id="text"></textarea><br>
+	<input type="txte" id="txt">
+	<input type="button" value="提交" id="btn">
+</body>
+</html>
+<script type="text/javascript">
+	let text = document.querySelector('#text');
+	let txt = document.querySelector('#txt');
+	let btn = document.querySelector('#btn');
+
+	btn.onclick = ()=>{
+		text.value += txt.value+'\n';
+		txt.value = '';
+	}
+
+
+</script>

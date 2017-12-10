@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>提交留言</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<textarea cols="40" rows="10" id="texts"></textarea><br>
+	<input type="text" id="txt">
+	<input type="button" value="提交" id="btn">
+</body>
+</html>
+<script type="text/javascript">
+	/*
+		键盘特殊属性 ctrlKey shiftKey altKey
+
+	
+	 */
+
+
+
+
+	let texts = document.querySelector('#texts');
+	let txt = document.querySelector('#txt');
+	let btn = document.querySelector('#btn');
+/*	document.onkeydown = (ev)=>{
+		let oEvent = ev || event;
+		alert(oEvent.ctrlKey)
+	}*/
+	btn.onclick = ()=>{
+		texts.value += txt.value+'\n';
+		txt.value = '';
+	}
+	txt.onkeydown = (ev)=>{
+		let oEvent = ev || event;
+		if(oEvent.keyCode == 13 && oEvent.ctrlKey){
+			texts.value += txt.value+'\n';
+			txt.value = '';			
+			// alert(oEvent.keyCode)
+		}
+	}
+
+
+</script>
